@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>forcerules__ValidateNumericValue</fullName>
+    <active>true</active>
+    <description>Avoid adding value other than the number for numeric fields</description>
+    <errorConditionFormula>IF(OR(ISPICKVAL( forcerules__Field_Type__c , &apos;double&apos;),ISPICKVAL( forcerules__Field_Type__c , &apos;currency&apos;)),  IF( ISNUMBER( forcerules__Value__c ), false, true), false)</errorConditionFormula>
+    <errorMessage>Please enter correct value in numeric field</errorMessage>
+</ValidationRule>

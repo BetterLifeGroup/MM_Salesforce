@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>forcerules__All</fullName>
+    <columns>NAME</columns>
+    <columns>forcerules__Sort_Order__c</columns>
+    <columns>forcerules__Object_Name__c</columns>
+    <columns>forcerules__Active__c</columns>
+    <columns>forcerules__Owner_Queue__c</columns>
+    <columns>forcerules__Owner_User__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>
