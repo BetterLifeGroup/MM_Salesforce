@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Trigger</name>
+        <label>Trigger: Force Assignment Rules</label>
+        <locationX>50</locationX>
+        <locationY>242</locationY>
+        <actionName>forcerules__RecordAssignmentHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>objectNameValue</name>
+            <value>
+                <stringValue>Contract</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sObjValueId</name>
+            <value>
+                <elementReference>iv_Record_Contract.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>forcerules__RecordAssignmentHandler</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <name>Is_Record_Assignment_Rule_True</name>
+        <label>Is Record Assignment Rule True?</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <defaultConnectorLabel>Assignment Rule False</defaultConnectorLabel>
+        <rules>
+            <name>Assignment_Rule_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>iv_Record_Contract.Assign_Owner_Using_Assignment_Rules__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Trigger</targetReference>
+            </connector>
+            <label>Assignment Rule True</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Subflow: Contract Owner Round Robin {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SubFlow: Contract Owner Round Robin</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Record_Assignment_Rule_True</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>iv_Record_Contract</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Contract</objectType>
+    </variables>
+</Flow>
