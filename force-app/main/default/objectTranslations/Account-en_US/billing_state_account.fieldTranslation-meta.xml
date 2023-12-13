@@ -2,7 +2,7 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Postal State/Province</value>
+        <value>Not use Postal State/Province</value>
     </caseValues>
     <name>billing_state_account</name>
     <startsWith>Consonant</startsWith>
