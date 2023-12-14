@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Force_Assignment_Rules</name>
+        <label>Force Assignment Rules</label>
+        <locationX>50</locationX>
+        <locationY>242</locationY>
+        <actionName>forcerules__RecordAssignmentHandler</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>objectNameValue</name>
+            <value>
+                <stringValue>Account</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>sObjValueId</name>
+            <value>
+                <elementReference>iv_Record_Account.Id</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>forcerules__RecordAssignmentHandler</nameSegment>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>59.0</apiVersion>
+    <decisions>
+        <name>Is_Assignment_Rule_True</name>
+        <label>Assignment Rule True</label>
+        <locationX>182</locationX>
+        <locationY>134</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Assignment_Rule_True</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>iv_Record_Account.Assign_Owner_using_Assignment_Rules__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Force_Assignment_Rules</targetReference>
+            </connector>
+            <label>Assignment Rule True</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>SubFlow: Account to a Queue by Force App {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>SubFlow: Account to a Queue by Force App</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Assignment_Rule_True</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>iv_Record_Account</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+</Flow>
