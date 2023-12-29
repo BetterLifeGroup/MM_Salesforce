@@ -4916,6 +4916,78 @@
             <label>South Africa</label>
             <orgDefault>true</orgDefault>
             <standard>true</standard>
+            <states>
+                <active>true</active>
+                <integrationValue>ZA.EC</integrationValue>
+                <isoCode>EC</isoCode>
+                <label>Eastern Cape</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>ZA.FS</integrationValue>
+                <isoCode>FS</isoCode>
+                <label>Free State</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>ZA.GT</integrationValue>
+                <isoCode>GT</isoCode>
+                <label>Gauteng</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>ZA.MP</integrationValue>
+                <isoCode>MP</isoCode>
+                <label>Mpumalanga</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>ZA.NC</integrationValue>
+                <isoCode>NC</isoCode>
+                <label>Northern Cape</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>ZA.NL</integrationValue>
+                <isoCode>NL</isoCode>
+                <label>KwaZulu-Natal</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>ZA.NP</integrationValue>
+                <isoCode>NP</isoCode>
+                <label>Limpopo</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>ZA.NW</integrationValue>
+                <isoCode>NW</isoCode>
+                <label>North-West</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
+            <states>
+                <active>true</active>
+                <integrationValue>ZA.WC</integrationValue>
+                <isoCode>WC</isoCode>
+                <label>Western Cape</label>
+                <standard>false</standard>
+                <visible>true</visible>
+            </states>
             <visible>true</visible>
         </countries>
         <countries>
