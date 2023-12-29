@@ -3,7 +3,7 @@
     <fullName>Business_Model__c</fullName>
     <externalId>false</externalId>
     <label>Business Model</label>
-    <required>true</required>
+    <required>false</required>
     <trackFeedHistory>false</trackFeedHistory>
     <type>Picklist</type>
     <valueSet>
@@ -29,6 +29,11 @@
                 <fullName>Express</fullName>
                 <default>false</default>
                 <label>Express</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>-</label>
             </value>
         </valueSetDefinition>
     </valueSet>
