@@ -47,9 +47,9 @@
         <label>Internal Administrators Group</label>
     </standardValue>
     <standardValue>
-        <fullName>Internal Consultant</fullName>
+        <fullName>Internal Consultants</fullName>
         <default>false</default>
-        <label>Internal Consultant</label>
+        <label>Internal Consultants</label>
     </standardValue>
     <standardValue>
         <fullName>Lead Agency</fullName>
