@@ -2,12 +2,8 @@
 <CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <caseValues>
         <plural>false</plural>
-        <value>Account Owner - Regional Manager</value>
+        <value>Primary Email</value>
     </caseValues>
-    <caseValues>
-        <plural>true</plural>
-        <value>Account Owners - Regional Managers</value>
-    </caseValues>
-    <name>account_owner</name>
+    <name>email_contact</name>
     <startsWith>Vowel</startsWith>
 </CustomFieldTranslation>
