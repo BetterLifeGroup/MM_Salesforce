@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Root Business</fullName>
+        <default>false</default>
+        <label>Root Business</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Independent Aggregators</fullName>
+        <default>false</default>
+        <label>Independent Aggregators</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Bond Brokers</fullName>
+        <default>false</default>
+        <label>Bond Brokers</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal</fullName>
+        <default>false</default>
+        <label>Internal</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Sub Branch</fullName>
+        <default>false</default>
+        <label>Internal Sub Branch</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Region</fullName>
+        <default>false</default>
+        <label>Internal Region</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Administrators</fullName>
+        <default>false</default>
+        <label>Internal Administrators</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Administrators Sub Group</fullName>
+        <default>false</default>
+        <label>Internal Administrators Sub Group</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Administrators Group</fullName>
+        <default>false</default>
+        <label>Internal Administrators Group</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Internal Consultants</fullName>
+        <default>false</default>
+        <label>Internal Consultants</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead Agency</fullName>
+        <default>false</default>
+        <label>Lead Agency</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Lead Agent</fullName>
+        <default>false</default>
+        <label>Lead Agent</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Leads</fullName>
+        <default>false</default>
+        <label>Leads</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Competitor</fullName>
+        <default>false</default>
+        <label>Competitor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Customer</fullName>
+        <default>false</default>
+        <label>Customer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Integrator</fullName>
+        <default>false</default>
+        <label>Integrator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Partner</fullName>
+        <default>false</default>
+        <label>Partner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Press</fullName>
+        <default>false</default>
+        <label>Press</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect</fullName>
+        <default>false</default>
+        <label>Prospect</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+</StandardValueSet>
