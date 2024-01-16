@@ -94,6 +94,10 @@
                 <behavior>Edit</behavior>
                 <field>OwnerExpirationNotice</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Original_Contract_Start_Date__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
