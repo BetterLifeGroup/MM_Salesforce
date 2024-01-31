@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Regional_Manager__c</fullName>
     <externalId>false</externalId>
-    <formula>Account.OwnerId</formula>
+    <formula>Account.Owner.FirstName  &amp; &apos; &apos;  &amp;   Account.Owner.LastName</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Regional Manager</label>
     <required>false</required>
