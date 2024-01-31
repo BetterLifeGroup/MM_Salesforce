@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Edoc_Debit_Order_Authority__c</fullName>
+    <defaultValue>false</defaultValue>
+    <externalId>false</externalId>
+    <label>Edoc Debit Order Authority</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>
