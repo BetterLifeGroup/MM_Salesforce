@@ -2,6 +2,16 @@
 <StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <sorted>false</sorted>
     <standardValue>
+        <fullName>Owner</fullName>
+        <default>false</default>
+        <label>Owner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Co-Owner</fullName>
+        <default>false</default>
+        <label>Co-Owner</label>
+    </standardValue>
+    <standardValue>
         <fullName>Billing Contact Person</fullName>
         <default>false</default>
         <label>Billing Contact Person</label>
