@@ -599,10 +599,6 @@
         <fields>CreatedDate</fields>
         <relatedList>DocumentChecklistItem</relatedList>
     </relatedLists>
-    <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Notes__c.Contract__c</relatedList>
-    </relatedLists>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showHighlightsPanel>false</showHighlightsPanel>
