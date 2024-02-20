@@ -36,9 +36,9 @@
         <label>National</label>
     </customValue>
     <customValue>
-        <fullName>Western Cap</fullName>
+        <fullName>Western Cape</fullName>
         <default>false</default>
-        <label>Western Cap</label>
+        <label>Western Cape</label>
     </customValue>
     <masterLabel>GlobalRegions</masterLabel>
     <sorted>false</sorted>
